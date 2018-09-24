@@ -14,7 +14,10 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
 import { HomeModule } from './home/home.module';
+
 import { PromosComponent } from './promos/promos.component';
+
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { PromosComponent } from './promos/promos.component';
     ProfileComponent,
     NavbarComponent,
     FooterComponent,
+
     PromosComponent
+
+    LoginComponent
   ],
   imports: [
     BrowserModule,
