@@ -13,6 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
+import { UserService } from './services/user.service';
+import { StarRatingModule } from 'angular-star-rating';
 import { HomeModule } from './home/home.module';
 
 @NgModule({
@@ -22,7 +24,7 @@ import { HomeModule } from './home/home.module';
     LandingComponent,
     ProfileComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,9 +32,12 @@ import { HomeModule } from './home/home.module';
     FormsModule,
     RouterModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    StarRatingModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    UserService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
