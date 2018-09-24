@@ -28,9 +28,9 @@ import { LoginComponent } from './login/login.component';
     NavbarComponent,
     FooterComponent,
 
-    PromosComponent
+    PromosComponent,
 
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
