@@ -9,12 +9,14 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { LandingComponent } from './landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import { NearmeComponent } from './nearme/nearme.component';
 
 const routes: Routes =[
     { path: '',             component: LandingComponent },
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'login',            component: LoginComponent },
+    { path: 'nearme',            component: NearmeComponent },
     // { path: 'landing',          component: LandingComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent },
     // { path: '', redirectTo: 'home', pathMatch: 'full' }

@@ -17,6 +17,7 @@ import { UserService } from './services/user.service';
 import { StarRatingModule } from 'angular-star-rating';
 import { HomeModule } from './home/home.module';
 import { LoginComponent } from './login/login.component';
+import { NearmeComponent } from './nearme/nearme.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LoginComponent } from './login/login.component';
     ProfileComponent,
     NavbarComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    NearmeComponent
   ],
   imports: [
     BrowserModule,
