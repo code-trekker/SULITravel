@@ -16,6 +16,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { UserService } from './services/user.service';
 import { StarRatingModule } from 'angular-star-rating';
 import { HomeModule } from './home/home.module';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { HomeModule } from './home/home.module';
     ProfileComponent,
     NavbarComponent,
     FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
