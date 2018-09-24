@@ -30,37 +30,21 @@
                                 <div class="row following" id="follows">
                                     <div class="col-md-6 ml-auto mr-auto">
                                         <ul class="list-unstyled follows">
-                                        
-                                            <li>
+                                            <li *ngFor="let feedback of feedbacks">
                                                 <div class="row">
                                                     <div style="display:flex;align-items:center;" class="col-md-2 col-sm-2 ml-auto mr-auto">
-                                                        <img src="./assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                        <img src="{{feedback.user.picture}}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                                                     </div>
                                                     <div class="col-md-7 col-sm-10 ml-auto">
-                                                        <h6>Flume<br />
-                                                        <span><star-rating [labelText]="'5.0'" [labelPosition]="'right'" [size]="'small'" [starType]="'svg'" [readOnly]="true" [showHalfStars]="true" [step]="0.5" [rating]="5.0"></star-rating>
-                                                            </span><small>Awesome person!</small></h6>
+                                                        <h6>{{feedback.user.name}}<br />
+                                                        <span><star-rating [labelText]="feedback.rating" [labelPosition]="'right'" [size]="'small'" [starType]="'svg'" [readOnly]="true" [showHalfStars]="true" [step]="0.5" [rating]="feedback.rating"></star-rating>
+                                                            </span><small>{{feedback.comment}}</small></h6>
                                                     </div>
                                                     <div class="col-md-3 col-sm-2 ml-auto mr-auto"></div>
                                                     
                                                 </div>
                                             </li>
                                             <hr />
-
-                                            <li>
-                                                <div class="row">
-                                                    <div style="display:flex;align-items:center;" class="col-md-2 col-sm-2 ml-auto mr-auto">
-                                                        <img src="./assets/img/faces/ayo-ogunseinde-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                                    </div>
-                                                    <div class="col-md-7 col-sm-7 ml-auto ">
-                                                        <h6>Banks<br />
-                                                        <span><star-rating [labelText]="'4.5'" [labelPosition]="'right'" [size]="'small'" [starType]="'svg'" [readOnly]="true" [showHalfStars]="true" [step]="0.5" [rating]="4.5"></star-rating>
-                                                            </span><small>Awesome person!</small></h6>
-                                                    </div>
-                                                    <div class="col-md-3 col-sm-2 ml-auto mr-auto"></div>
-                                                    
-                                                </div>
-                                            </li>
                                         </ul>
                                     </div>
                                 </div>
