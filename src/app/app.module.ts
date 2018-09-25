@@ -16,6 +16,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { UserService } from './services/user.service';
 import { StarRatingModule } from 'angular-star-rating';
 import { HomeModule } from './home/home.module';
+
+import { PromosComponent } from './promos/promos.component';
+
 import { LoginComponent } from './login/login.component';
 
 @NgModule({
@@ -26,7 +29,10 @@ import { LoginComponent } from './login/login.component';
     ProfileComponent,
     NavbarComponent,
     FooterComponent,
-    LoginComponent
+
+    PromosComponent,
+
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
