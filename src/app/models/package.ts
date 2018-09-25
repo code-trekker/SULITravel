@@ -6,13 +6,16 @@ export class Package {
     items:Array<PackageItem>;
     pictures:Array<any>;
     per:string;
+    rating: number;
 
     constructor(name:string = "Iligan Tipid Promo",
-        description:string = "Trip to all Waterfalls here in Iligan City. What are you waiting for? Book Now!",
+        rating:number = 5.0,
         price:number = 3000,
+        description:string = "Trip to all Waterfalls here in Iligan City. What are you waiting for? Book Now!",
         per:string ="head",
         items:Array<PackageItem> = [new PackageItem()],
-        pictures:Array<any>= ['https://www.lakwatsero.com/wp-content/uploads/2014/07/Tinago-00-1000x670.jpg']){
+        pictures:Array<any>= ['https://www.lakwatsero.com/wp-content/uploads/2014/07/Tinago-00-1000x670.jpg']
+        ){
 
         this.name = name;
         this.description = description;
@@ -20,6 +23,7 @@ export class Package {
         this.per = per;
         this.pictures =pictures;
         this.items = items;
+        this.rating = rating;
 
     }
 }

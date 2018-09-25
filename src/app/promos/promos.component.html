@@ -15,11 +15,17 @@
             <img class="card-img-top" data-src="holder.js/100px180/" alt="{{promo.name}}" src="{{promo.pictures[0]}}" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
             <div class="card-body">
               <h4 class="card-title">{{promo.name}}</h4>
-                <ul class="list-group list-group-flush">
+              <star-rating [starType]="'svg'" [readOnly]="true" [showHalfStars]="true" [step]="0.5" [labelText]="promo.rating" [labelPosition]="'right'" [rating]="promo.rating"></star-rating>
+              <span>&#x20b1;{{promo.price}}/{{promo.per}}</span>
+              <br />
+              <br />
+              <p class="card-text">
+                {{promo.description}}
+              </p>
+               <!-- <ul class="list-group list-group-flush">
                 <li *ngFor="let item of promo.items" class="list-group-item"><a href="#">{{item.name}}</a></li>
-              </ul>
-              <br/>
-              <a (click)="view(promo)" class="btn btn-danger">View</a>
+              </ul> -->
+              <a (click)="view(promo)" class="btn  btn-outline-danger">View</a>
             </div>
         </div>
     </div>
