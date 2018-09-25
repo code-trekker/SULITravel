@@ -10,12 +10,12 @@ export class PromosComponent implements OnInit {
   constructor() {
     this.promos.push(new Package());
     this.promos.push(new Package('Iligan Tipid Promo 1',4.5));
-    this.promos.push(new Package('Iligan Tipid Promo 2',4));
-    this.promos.push(new Package('Iligan Tipid Promo 3',3.5));
-    this.promos.push(new Package('Iligan Tipid Promo 4',3));
-    this.promos.push(new Package('Iligan Tipid Promo 5',2.5));
-    this.promos.push(new Package('Iligan Tipid Promo 6',2));
-    this.promos.push(new Package('Iligan Tipid Promo 7',1));
+    this.promos.push(new Package('Iligan Tipid Promo 2',4,4500));
+    this.promos.push(new Package('Iligan Tipid Promo 3',3.5,3000));
+    this.promos.push(new Package('Iligan Tipid Promo 4',3,3500));
+    this.promos.push(new Package('Iligan Tipid Promo 5',2.5,4000));
+    this.promos.push(new Package('Iligan Tipid Promo 6',2,4500));
+    this.promos.push(new Package('Iligan Tipid Promo 7',1,5000));
    }
 
    view(promo){
