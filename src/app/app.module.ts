@@ -20,6 +20,7 @@ import { HomeModule } from './home/home.module';
 import { PromosComponent } from './promos/promos.component';
 
 import { LoginComponent } from './login/login.component';
+import { NearmeComponent } from './nearme/nearme.component';
 
 @NgModule({
   declarations: [
@@ -29,10 +30,15 @@ import { LoginComponent } from './login/login.component';
     ProfileComponent,
     NavbarComponent,
     FooterComponent,
+<<<<<<< HEAD
 
     PromosComponent,
 
     LoginComponent,
+=======
+    LoginComponent,
+    NearmeComponent
+>>>>>>> origin/geronyl
   ],
   imports: [
     BrowserModule,

@@ -11,13 +11,18 @@ import { LandingComponent } from './landing/landing.component';
 import { PromosComponent } from './promos/promos.component';
 
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import { NearmeComponent } from './nearme/nearme.component';
 
 const routes: Routes =[
     { path: '',             component: LandingComponent },
     { path: 'profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'login',            component: LoginComponent },
+<<<<<<< HEAD
     { path: 'promos',            component: PromosComponent },
+=======
+    { path: 'nearme',            component: NearmeComponent },
+>>>>>>> origin/geronyl
     // { path: 'landing',          component: LandingComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent },
      { path: 'sample', redirectTo: 'home', pathMatch: 'full' }
