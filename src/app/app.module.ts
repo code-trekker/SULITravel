@@ -30,15 +30,9 @@ import { NearmeComponent } from './nearme/nearme.component';
     ProfileComponent,
     NavbarComponent,
     FooterComponent,
-<<<<<<< HEAD
-
     PromosComponent,
-
-    LoginComponent,
-=======
     LoginComponent,
     NearmeComponent
->>>>>>> origin/geronyl
   ],
   imports: [
     BrowserModule,

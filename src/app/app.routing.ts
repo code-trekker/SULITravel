@@ -18,11 +18,8 @@ const routes: Routes =[
     { path: 'profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'login',            component: LoginComponent },
-<<<<<<< HEAD
     { path: 'promos',            component: PromosComponent },
-=======
     { path: 'nearme',            component: NearmeComponent },
->>>>>>> origin/geronyl
     // { path: 'landing',          component: LandingComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent },
      { path: 'sample', redirectTo: 'home', pathMatch: 'full' }
