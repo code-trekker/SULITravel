@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Package } from '../models/package';
+import { PackageService } from '../services/package.service';
 @Component({
   selector: 'app-promos',
   templateUrl: './promos.component.html',
@@ -7,7 +8,7 @@ import { Package } from '../models/package';
 })
 export class PromosComponent implements OnInit {
   promos:Array<Package> = [];
-  constructor() {
+  constructor(private packageService:PackageService) {
     this.promos.push(new Package());
     this.promos.push(new Package('Iligan Tipid Promo 1',4.5));
     this.promos.push(new Package('Iligan Tipid Promo 2',4,4500));
@@ -19,6 +20,7 @@ export class PromosComponent implements OnInit {
    }
 
    view(promo){
+     this.packageService.add(promo);
      console.log(promo);
    }
   ngOnInit() {
