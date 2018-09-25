@@ -46,8 +46,19 @@
                                             </li>
                                             <hr />
                                         </ul>
+                                            <star-rating [(rating)]="input_rating" (ratingChange)="onRatingChange($event)" [(labelText)]="input_rating" [labelPosition]="'right'"  [starType]="'svg'"  [showHalfStars]="true" [step]="0.5" ></star-rating>
+                                            
+                                            <textarea style="width:80%;" [(ngModel)]="input_comment" #ctrl="ngModel" placeholder="Comment Here"></textarea>
+                                            <br />
+                                            <br />
+                                            <button (click)="submit()"  class="btn btn-warning">
+                                                Submit
+                                            </button>
                                     </div>
                                 </div>
+                                
+                                
+                                
                             </ng-template>
                         </ngb-tab>
                         <ngb-tab title="Recent Customers">
